@@ -1,16 +1,10 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-# Есть словарь координат городов
-
+# calculate distances of sites, wit dictionary
 sites = {
     'Moscow': (550, 370),
     'London': (510, 510),
     'Paris': (480, 480),
 }
 
-# TODO Составим словарь словарей расстояний между ними
-# расстояние на координатной сетке - корень из (x1 - x2) ** 2 + (y1 - y2) ** 2
 from pprint import pprint
 from math import sqrt
 moscow= sites["Moscow"]
