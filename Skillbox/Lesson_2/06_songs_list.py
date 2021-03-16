@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# Есть список песен группы Depeche Mode со временем звучания с точносттю до долей минут
 
 violator_songs_list = [
     ['World in My Eyes', 4.86],
@@ -15,14 +14,14 @@ violator_songs_list = [
     ['Clean', 5.83],
 ]
 
-# распечатайте общее время звучания трех песен: 'Halo', 'Enjoy the Silence' и 'Clean' в формате
-#   Три песни звучат ХХХ минут
-# Обратите внимание, что делать много вычислений внутри print() - плохой стиль.
-# Лучше заранее вычислить необходимое, а затем в print(xxx, yyy, zzz)
+#Training with lists № 3
 
-# TODO здесь ваш код
+common_time_songs=violator_songs_list[3][1]+violator_songs_list[5][1]+\
+                  violator_songs_list[-1][1]
+print("Три песни звучат примерно", round(common_time_songs), "минут")
 
-# Есть словарь песен группы Depeche Mode
+#training with dictionaries
+
 violator_songs_dict = {
     'World in My Eyes': 4.76,
     'Sweetest Perfection': 4.43,
@@ -35,7 +34,9 @@ violator_songs_dict = {
     'Clean': 5.68,
 }
 
-# распечатайте общее время звучания трех песен: 'Sweetest Perfection', 'Policy of Truth' и 'Blue Dress'
-#   А другие три песни звучат ХХХ минут
 
-# TODO здесь ваш код
+sweet_perfection=violator_songs_dict["Sweetest Perfection"]
+police_of_truth=violator_songs_dict["Policy of Truth"]
+blue_dress=violator_songs_dict["Blue Dress"]
+common_time_songs_in_dict=sweet_perfection+police_of_truth+blue_dress
+print("А другие три песни звучат примерно", round(common_time_songs_in_dict), "минут")
